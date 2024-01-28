@@ -52,3 +52,20 @@ h1{
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+section{
+    background: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
