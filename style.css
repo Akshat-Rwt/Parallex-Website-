@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto ;
+    overflow-x: hidden;  /*Donot want to go left and right */
+
+    perspective: 10px; /*Isse hamare 3D axis pe hm kaam kr skte hai hm usko inable kr dete hai  */
+
+    /* Iska mtlb ha ke mere eyes or image ke beach ka distance  */ 
+    
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; /* Isse jo mene 3D vale cheex ko inable kra h usko ye preserve kr dega htayega nhi  */
+
+    z-index: -1; /* z-index is basically for the layering part  */
+
+}
+
+.background{
+    transform: translateZ(-40px) scale(5); /*Distance dene ke leye hota h ye transalteX use kra gya h take image appse kitne duur rhe or scale isleye kyuki vo dur jayege to chotii hoge to screen ke pure ae isleye */
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3); /* Distance dene ke leye hota h ye transalteX use kra gya h take image appse kitne duur rhe or scale isleye kyuki vo dur jayege to chotii hoge to screen ke pure ae isleye */
+}
+
+
+.background , .foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Its maintain the picture  */
+    z-index: -1; /* z-index is basically for the layering part  */
+}
+
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0m.3);
+}
