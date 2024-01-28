@@ -6,6 +6,7 @@
 
 #wrapper{
     height: 100vh;
+    width: 100vw;
     overflow-y: auto ;
     overflow-x: hidden;  /*Donot want to go left and right */
 
