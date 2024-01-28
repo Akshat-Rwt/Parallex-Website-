@@ -28,7 +28,7 @@
 }
 
 .background{
-    transform: translateZ(-40px) scale(5); /*Distance dene ke leye hota h ye transalteX use kra gya h take image appse kitne duur rhe or scale isleye kyuki vo dur jayege to chotii hoge to screen ke pure ae isleye */
+    transform: translateZ(-40px) scale(6); /*Distance dene ke leye hota h ye transalteX use kra gya h take image appse kitne duur rhe or scale isleye kyuki vo dur jayege to chotii hoge to screen ke pure ae isleye */
 }
 
 .foreground{
